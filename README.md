@@ -8,7 +8,7 @@ En app til mobilen med tre deler:
 
 Dette er en kopi av en app som er i bruk, med eksempeldata i stedet for ekte ting. Du lager din egen kopi, og Claude hjelper deg å tilpasse den, for eksempel til målene på din bod.
 
-> **Slik leser du guiden:** under hvert steg står en kort oppskrift. Trenger du mer hjelp, trykker du på **▸ Mer hjelp**. Der står det mer detaljert hva du skal gjøre, med skisser og hva du gjør hvis noe går galt.
+> **Slik leser du guiden:** under hvert steg står en kort oppskrift. Trenger du mer hjelp, trykker du på **Mer hjelp**. Der står det mer detaljert hva du skal gjøre, med skisser og hva du gjør hvis noe går galt.
 >
 > **Står du fast,** kan du alltid spørre Claude. Ta et skjermbilde av det du ser, lim det inn i Claude (Ctrl+V på Windows, Cmd+V på Mac) og spør «hva gjør jeg nå?».
 
@@ -46,7 +46,7 @@ Det meste gjør du bare én gang. Regn med rundt halvannen time totalt, og av de
 2. Last ned **Claude-appen** til datamaskinen fra [claude.com/download](https://claude.com/download), og logg inn.
 
 <details>
-<summary><b>▸ Mer hjelp: Claude Pro og appen</b></summary>
+<summary><b>Mer hjelp: Claude Pro og appen</b></summary>
 
 **Lag konto og velg Pro**
 1. Gå til [claude.ai](https://claude.ai) i nettleseren på datamaskinen.
@@ -74,7 +74,7 @@ Det meste gjør du bare én gang. Regn med rundt halvannen time totalt, og av de
 2. Skriv ned brukernavnet ditt. Claude trenger det senere.
 
 <details>
-<summary><b>▸ Mer hjelp: GitHub</b></summary>
+<summary><b>Mer hjelp: GitHub</b></summary>
 
 GitHub er der koden til appen lagres. Du trenger ikke forstå koden, men appen må ligge et sted Claude og Vercel kommer til.
 
@@ -106,7 +106,7 @@ Du finner brukernavnet ditt ved å trykke på profilbildet øverst til høyre p�
 3. Trykk **Create new project**, og vent et par minutter til prosjektet er klart.
 
 <details>
-<summary><b>▸ Mer hjelp: Supabase</b></summary>
+<summary><b>Mer hjelp: Supabase</b></summary>
 
 Supabase er databasen, altså stedet der alt du legger inn i appen blir lagret.
 
@@ -154,7 +154,7 @@ Trykk **Create organization**.
 Appen viser feilmeldinger helt til databasen er koblet til i steg 6. Det er helt normalt.
 
 <details>
-<summary><b>▸ Mer hjelp: Vercel og din egen kopi</b></summary>
+<summary><b>Mer hjelp: Vercel og din egen kopi</b></summary>
 
 Knappen gjør to ting på én gang. Den lager en kopi av koden på din GitHub, og den legger appen ut på nettet med din nye Vercel-konto. Du trenger aldri logge inn på noen andres konto.
 
@@ -196,7 +196,7 @@ Knappen gjør to ting på én gang. Den lager en kopi av koden på din GitHub, o
 Da kan Claude sette opp databasen og innstillingene for deg, så du slipper å kopiere nøkler.
 
 <details>
-<summary><b>▸ Mer hjelp: koblinger (connectors)</b></summary>
+<summary><b>Mer hjelp: koblinger (connectors)</b></summary>
 
 En kobling gir Claude lov til å jobbe i Supabase og Vercel for deg. Du godkjenner selv hva den får tilgang til, og du kan koble fra når du vil.
 
@@ -230,7 +230,7 @@ En kobling gir Claude lov til å jobbe i Supabase og Vercel for deg. Du godkjenn
 3. Claude gjør jobben og ber deg om hjelp underveis. Den kan for eksempel be deg logge inn på GitHub i nettleseren, lime inn en nøkkel i Vercel eller svare på spørsmål om boden din.
 
 <details>
-<summary><b>▸ Mer hjelp: arbeidet med Claude</b></summary>
+<summary><b>Mer hjelp: arbeidet med Claude</b></summary>
 
 **Start økten**
 
@@ -279,7 +279,7 @@ Claude spør før den kjører kommandoer eller installerer noe. Les den korte fo
 Vil flere bruke appen, sender du dem adressen, og de gjør steg 7.
 
 <details>
-<summary><b>▸ Mer hjelp: appen på mobilen og varsler</b></summary>
+<summary><b>Mer hjelp: appen på mobilen og varsler</b></summary>
 
 **iPhone**
 
