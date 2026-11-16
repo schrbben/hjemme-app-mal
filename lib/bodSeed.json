@@ -1,0 +1,28 @@
+{
+  "containers": [
+    { "kind": "box", "number": 1, "label": "Julepynt", "color": "clear", "placement": "shelf", "shelf": "A", "level": 3, "slot": 1,
+      "items": ["Julekuler", "Lysslynge", "Nisser", "Adventsstake"] },
+    { "kind": "box", "number": 2, "label": "Vinterklær", "color": "clear", "placement": "shelf", "shelf": "A", "level": 3, "slot": 2,
+      "items": ["Ullundertøy", "Votter og luer", "Skjerf"] },
+    { "kind": "box", "number": 3, "label": "Verktøy", "color": "black", "placement": "shelf", "shelf": "A", "level": 3, "slot": 3,
+      "items": ["Drill", "Skrutrekkere", "Målebånd", "Vater"] },
+    { "kind": "box", "number": 4, "label": "Ledninger og ladere", "color": "clear", "placement": "shelf", "shelf": "A", "level": 2, "slot": 1,
+      "items": ["Skjøteledning", "Ladere", "HDMI-kabel"] },
+    { "kind": "box", "number": 5, "label": "Tur og camping", "color": "black", "placement": "shelf", "shelf": "A", "level": 2, "slot": 2,
+      "items": ["Primus", "Hodelykt", "Sitteunderlag"] },
+    { "kind": "box", "number": 6, "label": "Bilder og papirer", "color": "clear", "placement": "shelf", "shelf": "A", "level": 1, "slot": 1,
+      "items": ["Fotoalbum", "Gamle brev", "Vitnemål"] },
+    { "kind": "box", "number": 7, "label": "Påskepynt", "color": "white", "placement": "shelf", "shelf": "B", "level": 3, "slot": 1,
+      "items": ["Påskekyllinger", "Fjær til påskeris"] },
+    { "kind": "box", "number": 8, "label": "Sommerklær", "color": "clear", "placement": "shelf", "shelf": "B", "level": 2, "slot": 2,
+      "items": ["Badetøy", "Shorts", "Solhatt"] },
+    { "kind": "box", "number": 9, "label": "Kjøkkenutstyr", "color": "clear", "placement": "shelf", "shelf": "B", "level": 1, "slot": 3,
+      "items": ["Vaffeljern", "Fonduesett", "Ekstra glass"] },
+    { "kind": "suitcase", "number": null, "label": "Stor koffert", "color": "blue", "placement": "floor", "pos_x": 0.32, "pos_z": 1.85, "rotation": 90,
+      "items": ["Reiseadaptere", "Toalettmappe"] },
+    { "kind": "cardboard", "number": null, "label": "Pappeske", "color": "brown", "placement": "floor", "pos_x": 0.3, "pos_z": 2.55,
+      "items": ["Bøker", "Brettspill"] },
+    { "kind": "bin", "number": null, "label": "Plastboks", "color": "purple", "placement": "elsewhere", "location": "Gjesterommet",
+      "items": ["Sengetøy til gjester"] }
+  ]
+}
