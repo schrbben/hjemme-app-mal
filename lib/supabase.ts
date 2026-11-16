@@ -2,9 +2,12 @@ import { createClient } from '@supabase/supabase-js'
 
 // Før Supabase er koblet til (første gang appen legges ut) brukes en plassholder, så bygget
 // går gjennom. Appen viser da feilmeldinger til nøklene er lagt inn i Vercel.
-export const supabaseConfigured = !!process.env.NEXT_PUBLIC_SUPABASE_URL && !!process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+// Nøkkelen: den nye publishable-nøkkelen (sb_publishable_…) anbefales. Den gamle anon-nøkkelen virker også,
+// men Supabase faser den ut ved slutten av 2026.
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+export const supabaseConfigured = !!process.env.NEXT_PUBLIC_SUPABASE_URL && !!supabaseKey
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://ikke-koblet-til.supabase.co'
-const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'ikke-koblet-til'
+const supabaseAnonKey = supabaseKey || 'ikke-koblet-til'
 
 export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
   realtime: {

@@ -4,7 +4,8 @@ Appen er laget for mobil, og hele brukerflaten er på norsk bokmål. Den har tre
 
 ## Teknologi
 - **Rammeverk:** Next.js 14.1 (App Router), React 18, TypeScript og Tailwind 3.4. Alle sider er `'use client'`.
-- **Database:** Supabase via `@supabase/supabase-js` 2.39 med den offentlige anon-nøkkelen.
+- **Database:** Supabase via `@supabase/supabase-js` (2.95 i låsefila) med den offentlige nøkkelen.
+  - Bruk `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` (`sb_publishable_…`). Den gamle `NEXT_PUBLIC_SUPABASE_ANON_KEY` (`eyJ…`) virker også, men Supabase faser den ut ved slutten av 2026.
   - Det er **ingen innlogging**. Tilgangsreglene (RLS) lar `anon` lese og skrive alt. Det er et bevisst valg.
   - Sanntid via `postgres_changes`, så endringer vises på alle telefoner.
 - **3D i boden:** three 0.172, @react-three/fiber 8.18 og camera-controls 3.1.2.
@@ -79,6 +80,7 @@ Reglene er testet med simulering over to år.
   - Vil du teste SQL uten risiko, kjør den i en transaksjon i et eget testskjema, og avslutt med en bevisst feil (`raise exception`), så alt rulles tilbake.
 - **Hemmeligheter:** skriv aldri ut nøkler i chatten. Den private varselnøkkelen legges inn i Vercel av brukeren selv.
 - **Produksjon:** curl mot `*.vercel.app` blir ofte stoppet av Vercels robotsperre. Sjekk heller i nettleseren, eller kall fra Supabase med `net.http_get`.
+- **Vercel Hobby:** en utrulling blir blokkert hvis forfatteren av commiten ikke er eieren av Vercel-kontoen. Sett `git config user.email` til brukerens bekreftede GitHub-e-post (eller `ID+brukernavn@users.noreply.github.com`) før du committer.
 - **Ved hver push:**
   - Spør før du pusher, fordi en push til `main` legges ut med en gang.
   - Skriv commit-meldinger på norsk.
